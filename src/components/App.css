@@ -1,0 +1,30 @@
+@import '~antd/dist/antd.css';
+a{
+  color: black !important;
+  text-decoration: none !important;
+}
+.container{
+  background-color:#ff6600;
+}
+.logo{
+  display: inline-block;
+  padding: 3px;
+  margin: 2px;
+  border: 1px white solid;
+  color: white !important; 
+}
+.title{
+  display: inline-block;
+  padding: 5px;
+  font-weight: bolder;
+}
+.tab{
+  display: inline-block;
+  padding: 5px;
+  text-align: center;
+  border-left: 1px black solid;
+}
+.login{
+  float: right;
+  padding: 5px;
+}
