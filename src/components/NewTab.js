@@ -34,13 +34,19 @@ export default class NewTab extends Component {
     );
   };
 
+  handleClickMore = () => {
+    this.getNewStories(
+      this.state.ids.slice(this.state.index, this.state.index + this.state.step)
+    );
+  };
+
   render() {
     return (
       <div>
         {this.state.newStories.map((item, index) => (
           <div className="container item">
             <div className="index">
-              <span>{index + 1}.</span>
+              <span>{this.state.index +index -29}.</span>
               <Icon type="caret-up" theme="outlined" />
             </div>
             <div className="item-content">
@@ -56,8 +62,8 @@ export default class NewTab extends Component {
             </div>
           </div>
         ))}
-        <span className="container more">
-          <Link to="">More</Link>
+        <span className="container more" onClick={this.handleClickMore}>
+          More
         </span>
       </div>
     );

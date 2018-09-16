@@ -32,14 +32,22 @@ export default class HomeTab extends Component {
       this.state.ids.slice(this.state.index, this.state.index + this.state.step)
     );
   };
+  handleClickMore = () => {
+    this.getTopStories(
+      this.state.ids.slice(this.state.index, this.state.index + this.state.step)
+    );
+  };
 
   render() {
     return (
-        <div>
-            {this.state.topStories.map((item,index)=>(
-                <Item item={item} index={index}/>
-            ))}
-        </div>
+      <div>
+        {this.state.topStories.map((item, index) => (
+          <Item item={item} index={index + this.state.index -29} />
+        ))}
+        <span className="container more" onClick={this.handleClickMore}>
+          More
+        </span>
+      </div>
     );
   }
 }

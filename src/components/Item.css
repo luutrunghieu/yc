@@ -32,9 +32,6 @@
     align-items: flex-start !important;
     background-color: #F4F8EE;
 }
-.more a{
-    color:black;
-}
-.more a:hover{
-    color: black;
+.more {
+    cursor: pointer;
 }

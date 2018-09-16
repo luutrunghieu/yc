@@ -9,7 +9,7 @@ export default class Item extends Component {
       <div>
         <div className="container item">
           <div className="index">
-            <span>{this.props.index + 1}.</span>
+            <span>{this.props.index}.</span>
             <Icon type="caret-up" theme="outlined" />
           </div>
           <div className="item-content">
