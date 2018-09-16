@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Icon } from "antd";
-import { fetchItemDetail, fetchNewStoryIds } from "../apis/api";
-export default class NewTab extends Component {
+import { fetchItemDetail, fetchJobStoryIds } from "../apis/api";
+export default class JobTab extends Component {
   state = {
     index: 0,
     step: 30,
@@ -14,7 +14,7 @@ export default class NewTab extends Component {
   }
 
   getNewStoryIds = async () => {
-    const ids = await fetchNewStoryIds();
+    const ids = await fetchJobStoryIds();
     this.setState({ ids });
   };
 
@@ -48,10 +48,7 @@ export default class NewTab extends Component {
                 <a href={item.url}>{item.title}</a>
               </div>
               <div className="sub-text">
-                {item.score} points by <Link to="">{item.by}</Link>{" "}
-                <Link to="">8 hours ago</Link> | <Link to="">hide</Link> |{" "}
-                <Link to="">past</Link>| <Link to="">web</Link> |{" "}
-                <Link to="">discuss</Link>
+                <Link to="">8 hours ago</Link>
               </div>
             </div>
           </div>

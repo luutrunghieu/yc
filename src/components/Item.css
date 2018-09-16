@@ -1,0 +1,40 @@
+.item{
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    background-color: #F4F8EE;
+    padding: 2px;
+}
+.index{
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.item-content{
+    flex:1;
+}
+.item-title a{
+    color: black;
+}
+.item-title a:hover{
+    color: black;
+}
+.sub-text, .sub-text a{
+    color: #818181;
+    font-size: 7pt;
+}
+.sub-text a:hover{
+    color: #818181;
+    text-decoration: underline;
+}
+.more{
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    background-color: #F4F8EE;
+}
+.more a{
+    color:black;
+}
+.more a:hover{
+    color: black;
+}

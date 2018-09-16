@@ -1,0 +1,33 @@
+.header {
+  background-color: #ff6600;
+}
+.header a:hover {
+  color: black;
+  text-decoration: none;
+}
+.logo {
+  padding: 3px;
+  margin: 2px;
+  border: 1px white solid;
+}
+.logo a {
+  color: white;
+}
+.title {
+  padding: 5px;
+  font-weight: bolder;
+}
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+}
+.tab {
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+  border-left: 1px black solid;
+}
+.login-tab {
+  margin-right: 5px;
+}

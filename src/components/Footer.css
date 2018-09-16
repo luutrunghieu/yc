@@ -1,0 +1,25 @@
+.footer{
+    width: 85%;
+    margin: 0 auto;
+    background-color: #F4F8EE;
+}
+@media screen and (max-width: 600px) {
+    .footer{
+      width: 100%;
+    }
+  }
+.footer>div{
+    padding-top:15px;
+    padding-bottom: 15px;
+}
+.footer-title{
+    text-align: center;
+}
+.footer-tabs,.footer-search{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.footer-search span{
+    padding-right: 10px;
+}

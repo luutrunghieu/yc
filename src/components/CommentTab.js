@@ -3,7 +3,9 @@ export default class CommentTab extends Component {
     state = {  }
     render() {
         return (
-            <h1>Comment tab</h1>
+            <div className="container">
+                No data
+            </div>
         );
     }
 }

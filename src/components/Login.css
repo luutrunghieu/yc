@@ -1,0 +1,12 @@
+.login{
+    width: 85%;
+    margin: 0 auto;
+}
+.login p{
+    color: black;
+    font-weight: bold;
+}
+
+.login label{
+    color: black;
+}
